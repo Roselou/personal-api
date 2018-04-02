@@ -1,9 +1,9 @@
 //Hard coded data
 
 var profile = [{
-	name: String,
-	githubUserName: String,
-	githubLink: url,
+	name: 'Rose Lou',
+	githubUserName: 'Roselou',
+	githubLink: 'https://github.com/Roselou'
 	githubProfileImage: url,
 	personalSiteLink: link, 
 	currentCity: String,
