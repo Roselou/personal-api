@@ -6,11 +6,11 @@ var Schema = mongoose.Schema;
 var ProfileSchema = new Schema ({
 	name: String,
 	githubUserName: String,
-	githubLink: url,
-	githubProfileImage: url,
-	personalSiteLink: link, 
+	githubLink: String,
+	githubProfileImage: String,
+	personalSiteLink: String, 
 	currentCity: String,
-	pets: [familyPets]
+	pets: [String]
 });
 
 var Profile = mongoose.model('Profile', ProfileSchema);
