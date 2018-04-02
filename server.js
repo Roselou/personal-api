@@ -15,7 +15,7 @@ var express = require('express');
 	app.get('/api', controllers.api.index);
 
 	app.get('/api/profile', controllers.profile.index);
-	
+
 
 	//LISTENER
-	app.listen(3000);
+	app.listen(process.env.PORT || 3000);
