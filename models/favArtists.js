@@ -6,6 +6,7 @@ var Schema = mongoose.Schema;
 // var Profile = require('./profile');
 
 var favArtistsSchema = new Schema ({
+	_id: Number,
 	name: String,
 	movement: String,
 	medium: String,
