@@ -1,7 +1,10 @@
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/personal-api');
 
+var Profile = require('./profileController');
+var favArtists = require('./favArtistsController');
+
 module.exports = {
-	profile: require('./profileController'),
-	favArtist: require('./favArtistController')
+	Profile : Profile,
+	favArtists : favArtists 
 };

@@ -18,6 +18,6 @@ function create(req, res){
 		if(err){
 			console.log('error', err);
 		}
-		res.json(artist);
-	});
+		res.json(artist)
+	})
 }

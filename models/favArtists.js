@@ -1,17 +1,18 @@
 var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/personal-api');
+
 var Schema = mongoose.Schema;
 
-var Profile = require('./profile');
+// var Profile = require('./profile');
 
-var favArtistSchema = new Schema ({
+var favArtistsSchema = new Schema ({
 	name: String,
 	movement: String,
 	medium: String,
-	artwork: [String],
+	artwork: String,
 	yearsAlive: Number
 });
 
-var favArtist = mongoose.model('favArtist', fa
-	);
+var favArtists = mongoose.model('favArtists', favArtistsSchema);
 
-	module.exports = favArtist;
+	module.exports = favArtists;
